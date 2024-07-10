@@ -8,7 +8,7 @@ function saveWord() {
 }
 
 function searchWord() {
-    let findWord = document.getElementById("SearchWord").value;
+    let findWord = document.getElementById("searchWord").value;
     let wordInDictionary = 0;
     for (let i = 0; i < words.length; ++i) {
         if (words[i].match(findWord)) {
@@ -20,5 +20,5 @@ function searchWord() {
     } else {
         alert("The word" + " " + findWord + " " + "is missing from the dictionary");
     }
-    document.getElementById("SearchWord").value = "";   
+    document.getElementById("searchWord").value = "";   
 }
