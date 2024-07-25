@@ -14,11 +14,11 @@ function searchWord() {
         if (words[i].match(findWord)) {
             wordInDictionary = 1;
         }        
-    }
+    } 
     if (wordInDictionary === 1) {
-        alert("The word" + " " + findWord + " " + "can be found in the dictionary");
+        alert(`The word ${findWord} can be found in the dictionary`);
     } else {
-        alert("The word" + " " + findWord + " " + "is missing from the dictionary");
+        alert(`The word ${findWord} is missing from the dictionary`);
     }
     document.getElementById("searchWord").value = "";   
 }
